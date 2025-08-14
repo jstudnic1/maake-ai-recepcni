@@ -5,6 +5,7 @@
   const audio = document.getElementById('demo-audio');
   const playDemoBtn = document.querySelector('[data-action="play-demo"]');
   const form = document.querySelector('[data-enhance]');
+  const timeEl = document.querySelector('[data-time]');
 
   if (navToggle && nav) {
     navToggle.addEventListener('click', () => {
@@ -33,6 +34,18 @@
     audio.addEventListener('ended', () => {
       playDemoBtn.textContent = '▶ Přehrát znovu';
     });
+  }
+
+  // Live time in phone status bar
+  if (timeEl) {
+    const update = () => {
+      const d = new Date();
+      const hh = String(d.getHours()).padStart(2, '0');
+      const mm = String(d.getMinutes()).padStart(2, '0');
+      timeEl.textContent = `${hh}:${mm}`;
+    };
+    update();
+    setInterval(update, 15_000);
   }
 
   if (form) {

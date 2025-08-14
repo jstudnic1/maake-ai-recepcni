@@ -28,6 +28,7 @@
 
   <main>
     <section id="hero" class="hero">
+      <div class="chrome-grid" aria-hidden="true"></div>
       <div class="container grid-2">
         <div class="hero-copy">
           <h1>AI recepční v češtině, která nikdy nespí</h1>
@@ -42,13 +43,34 @@
         </div>
         <div class="hero-media">
           <div class="glass-card">
-            <div class="phone-ui">
-              <div class="bar"></div>
-              <div class="screen">
-                <div class="wave" aria-hidden="true"></div>
-                <div class="assistant">„Dobrý den, tady MAAKE. Jak vám mohu pomoci?“</div>
-                <button class="btn btn-primary btn-call" data-action="play-demo">▶ Přehrát ukázku</button>
+            <div class="phone phone--neo">
+              <div class="phone__frame">
+                <div class="phone__notch"></div>
+                <div class="phone__buttons"></div>
+                <div class="phone__screen">
+                  <div class="phone__status">
+                    <span class="sig" aria-hidden="true">• • •</span>
+                    <span class="time" data-time>9:41</span>
+                    <span class="bat" aria-hidden="true">🔋</span>
+                  </div>
+                  <div class="call-card">
+                    <div class="avatar"><span>MA</span></div>
+                    <div class="call-meta">
+                      <div class="name">MAAKE Recepční</div>
+                      <div class="sub muted">Příchozí hovor</div>
+                    </div>
+                  </div>
+                  <div class="assistant-bubble">„Dobrý den, tady MAAKE. Jak vám mohu pomoci?“</div>
+                  <div class="wave" aria-hidden="true"></div>
+                  <div class="controls">
+                    <button class="chip" type="button">🔇 Ztlumit</button>
+                    <button class="chip" type="button">🔊 Hlasitost</button>
+                    <button class="chip btn-primary" type="button" data-action="play-demo">▶ Ukázka</button>
+                  </div>
+                  <div class="home-indicator" aria-hidden="true"></div>
+                </div>
               </div>
+              <div class="phone__gloss" aria-hidden="true"></div>
             </div>
           </div>
         </div>
