@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="28" viewBox="0 0 160 28" fill="none">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="160" y2="28" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7C5CFF"/>
+      <stop offset="1" stop-color="#36E4DA"/>
+    </linearGradient>
+  </defs>
+  <rect x="1" y="1" width="26" height="26" rx="6" fill="url(#g)" opacity="0.9"/>
+  <path d="M8 14c4-6 8-6 12 0-4 6-8 6-12 0Z" fill="#0B0D12"/>
+  <text x="38" y="20" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="800" fill="url(#g)">MAAKE</text>
+</svg>

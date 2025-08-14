@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MAAKE — AI Recepční pro firmy</title>
+  <meta name="description" content="AI recepční v češtině. Zvedá hovory, vítá návštěvy, plánuje schůzky a předává vzkazy. 24/7, spolehlivě a profesionálně." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="#hero" class="logo">
+        <img src="./assets/logo.svg" alt="MAAKE logo" height="28" />
+      </a>
+      <nav class="nav">
+        <a href="#features">Funkce</a>
+        <a href="#pricing">Ceník</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact" class="btn btn-primary">Domluvit demo</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="container grid-2">
+        <div class="hero-copy">
+          <h1>AI recepční v češtině, která nikdy nespí</h1>
+          <p>MAAKE zvedá hovory, vítá návštěvy, plánuje schůzky a předává vzkazy — přirozeně česky, 24/7 a bez čekání.</p>
+          <div class="cta-row">
+            <a href="#contact" class="btn btn-primary">Vyzkoušet demo</a>
+            <a href="#features" class="btn btn-ghost">Jak to funguje</a>
+          </div>
+          <div class="trust">
+            <img src="./assets/trust-badges.svg" alt="Důvěryhodné technologií" />
+          </div>
+        </div>
+        <div class="hero-media">
+          <div class="glass-card">
+            <div class="phone-ui">
+              <div class="bar"></div>
+              <div class="screen">
+                <div class="wave" aria-hidden="true"></div>
+                <div class="assistant">„Dobrý den, tady MAAKE. Jak vám mohu pomoci?“</div>
+                <button class="btn btn-primary btn-call" data-action="play-demo">▶ Přehrát ukázku</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <div class="container">
+        <h2>Co MAAKE umí</h2>
+        <div class="features grid-3">
+          <div class="feature">
+            <div class="icon i-call"></div>
+            <h3>Telefonní recepce</h3>
+            <p>Zvedá hovory, třídí požadavky a inteligentně přepojuje na správné osoby.</p>
+          </div>
+          <div class="feature">
+            <div class="icon i-calendar"></div>
+            <h3>Plánování schůzek</h3>
+            <p>Navrhuje termíny, posílá pozvánky a synchronizuje se s kalendáři.</p>
+          </div>
+          <div class="feature">
+            <div class="icon i-message"></div>
+            <h3>Předávání vzkazů</h3>
+            <p>Bezpečně zaznamená vzkaz a pošle jej jako e‑mail nebo SMS.</p>
+          </div>
+          <div class="feature">
+            <div class="icon i-language"></div>
+            <h3>Čeština i angličtina</h3>
+            <p>Mluví přirozeně česky, rozumí dialektům a poradí si i s angličtinou.</p>
+          </div>
+          <div class="feature">
+            <div class="icon i-clock"></div>
+            <h3>24/7 dostupnost</h3>
+            <p>Žádné propásnuté hovory. Reaguje okamžitě i mimo pracovní dobu.</p>
+          </div>
+          <div class="feature">
+            <div class="icon i-lock"></div>
+            <h3>Bezpečnost na prvním místě</h3>
+            <p>Šifrování, audit logy a řízení přístupů dle GDPR.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="section alt">
+      <div class="container">
+        <h2>Ceník</h2>
+        <div class="pricing grid-3">
+          <div class="price-card">
+            <h3>Start</h3>
+            <p class="price">2 490 Kč <span>/ měsíc</span></p>
+            <ul>
+              <li>Do 300 hovorů</li>
+              <li>1 číslo</li>
+              <li>Vzkazy do e‑mailu</li>
+            </ul>
+            <a href="#contact" class="btn btn-primary">Začít</a>
+          </div>
+          <div class="price-card featured">
+            <h3>Growth</h3>
+            <p class="price">5 900 Kč <span>/ měsíc</span></p>
+            <ul>
+              <li>Do 1 500 hovorů</li>
+              <li>3 čísla, přepojování</li>
+              <li>Kalendáře a SMS</li>
+            </ul>
+            <a href="#contact" class="btn btn-primary">Nejčastější volba</a>
+          </div>
+          <div class="price-card">
+            <h3>Enterprise</h3>
+            <p class="price">Na míru</p>
+            <ul>
+              <li>Neomezené hovory</li>
+              <li>Integrace na CRM</li>
+              <li>SLA a onboarding</li>
+            </ul>
+            <a href="#contact" class="btn btn-ghost">Kontaktovat obchod</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section">
+      <div class="container">
+        <h2>Časté dotazy</h2>
+        <div class="faq">
+          <details>
+            <summary>Jak rychle lze MAAKE nasadit?</summary>
+            <p>První verzi spustíme zpravidla do 5 pracovních dnů. Integrace na kalendáře a CRM trvá obvykle 1–2 týdny.</p>
+          </details>
+          <details>
+            <summary>Jaká je kvalita češtiny?</summary>
+            <p>Využíváme špičkové TTS a ASR modely optimalizované pro češtinu. Ladíme výslovnost i tempo řeči dle značky.</p>
+          </details>
+          <details>
+            <summary>Jak je to s ochranou osobních údajů?</summary>
+            <p>Data zpracováváme v EU, nabízíme DPA, retenční politiky a přísná přístupová pravidla. Splňujeme GDPR.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section alt">
+      <div class="container grid-2">
+        <div>
+          <h2>Domluvte si 20min demo</h2>
+          <p>Projdeme vaše potřeby, ukážeme reálné hovory a navrhneme nasazení pro vaši firmu.</p>
+          <ul class="bullets">
+            <li>Implementace na míru</li>
+            <li>Integrace na vaše nástroje</li>
+            <li>Možnost pilotu od 14 dnů</li>
+          </ul>
+        </div>
+        <form class="contact-form" action="#" method="post" data-enhance>
+          <label>
+            Jméno
+            <input type="text" name="name" required />
+          </label>
+          <label>
+            E‑mail
+            <input type="email" name="email" required />
+          </label>
+          <label>
+            Telefon
+            <input type="tel" name="phone" />
+          </label>
+          <label>
+            Zpráva
+            <textarea name="message" rows="4" placeholder="Stručně popište, co potřebujete…"></textarea>
+          </label>
+          <button class="btn btn-primary" type="submit">Odeslat</button>
+          <p class="form-ok" hidden>Děkujeme! Ozveme se co nejdříve.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <img src="./assets/logo.svg" alt="MAAKE logo" height="24" />
+          <p class="muted">AI recepční v češtině. 24/7.</p>
+        </div>
+        <nav>
+          <a href="#features">Funkce</a>
+          <a href="#pricing">Ceník</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Kontakt</a>
+        </nav>
+        <div class="legal muted">© 2025 MAAKE s.r.o. — Všechna práva vyhrazena.</div>
+      </div>
+    </div>
+  </footer>
+
+  <audio id="demo-audio" preload="auto">
+    <source src="https://cdn.pixabay.com/audio/2022/03/15/audio_2e2c6f8a2c.mp3" type="audio/mpeg" />
+  </audio>
+
+  <script src="./script.js" defer></script>
+</body>
+</html>
