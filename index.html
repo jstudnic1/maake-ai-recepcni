@@ -9,6 +9,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./styles.css" />
+  <!-- Vite/React entry to mount ChromeGrid component -->
+  <script type="module" src="/src/main.tsx"></script>
 </head>
 <body>
   <header class="site-header">
@@ -28,7 +30,7 @@
 
   <main>
     <section id="hero" class="hero">
-      <div class="chrome-grid" aria-hidden="true"></div>
+      <div id="chrome-grid-root" class="chrome-grid" aria-hidden="true"></div>
       <div class="container grid-2">
         <div class="hero-copy">
           <h1>AI recepční v češtině, která nikdy nespí</h1>

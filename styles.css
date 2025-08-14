@@ -65,25 +65,8 @@ a { color: var(--text); text-decoration: none; }
 .trust { opacity: .8; margin-top: 18px; }
 
 /* Decorative chrome grid behind hero (21st.dev resource inspired) */
-.chrome-grid {
-  position: absolute; inset: 0 0 auto 0; height: 520px; z-index: -1;
-  background:
-    radial-gradient(600px 220px at 20% 10%, rgba(124,92,255,0.20), transparent 60%),
-    radial-gradient(600px 220px at 80% 15%, rgba(54,228,218,0.18), transparent 60%),
-    linear-gradient(rgba(255,255,255,0.06), rgba(255,255,255,0.02));
-  mask-image:
-    linear-gradient(180deg, rgba(0,0,0,0.9), rgba(0,0,0,0.1));
-  pointer-events: none;
-}
-/* subtle grid lines */
-.chrome-grid::after {
-  content: ""; position: absolute; inset: 0;
-  background-image:
-    linear-gradient(rgba(255,255,255,0.06) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,0.06) 1px, transparent 1px);
-  background-size: 40px 40px, 40px 40px;
-  mix-blend-mode: overlay; opacity: 0.35;
-}
+.chrome-grid { position: absolute; inset: 0 0 auto 0; height: 520px; z-index: -1; }
+.chrome-grid-react { position: absolute; inset: 0; height: 520px; pointer-events: none; }
 
 .glass-card {
   background: var(--glass); border: 1px solid var(--border); border-radius: 20px; box-shadow: var(--shadow);
